@@ -1,0 +1,14 @@
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\bin\Debug\net8.0\DeadlockDpsAnalyzer.exe
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\bin\Debug\net8.0\DeadlockDpsAnalyzer.deps.json
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\bin\Debug\net8.0\DeadlockDpsAnalyzer.runtimeconfig.json
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\bin\Debug\net8.0\DeadlockDpsAnalyzer.dll
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\bin\Debug\net8.0\DeadlockDpsAnalyzer.pdb
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\DeadlockDpsAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\DeadlockDpsAnalyzer.AssemblyInfoInputs.cache
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\DeadlockDpsAnalyzer.AssemblyInfo.cs
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\DeadlockDpsAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\DeadlockDpsAnalyzer.dll
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\refint\DeadlockDpsAnalyzer.dll
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\DeadlockDpsAnalyzer.pdb
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\DeadlockDpsAnalyzer.genruntimeconfig.cache
+C:\Users\Jimi\OneDrive\Desktop\repos\DeadlockDpsAnalyzer\DeadlockDpsAnalyzer\obj\Debug\net8.0\ref\DeadlockDpsAnalyzer.dll
