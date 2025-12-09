@@ -3,11 +3,28 @@ using System.Collections.Generic;
 using DeadlockDpsAnalyzer.Models;
 using DeadlockDpsAnalyzer.Repositories;
 using DeadlockDpsAnalyzer.Services;
+using Microsoft.Extensions.Configuration.Json;
+using MySql.Data.MySqlClient;
+using Microsoft.Extensions.Configuration;
 
 class Program
 {
     static void Main(string[] args)
     {
+        // Build configuration to read appsettings.json
+        var config = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json")
+            .Build();
+
+        // Get connection string
+        string connectionString = config.GetConnectionString("DeadlockDatabase");
+
+        // Test connection
+        using var connection = new MySqlConnection(connectionString);
+        connection.Open();
+        Console.WriteLine("Connected to MySQL successfully!");
+        
+        
         //Hero selection
         var heroes = HeroRepository.GetHeroes();
 

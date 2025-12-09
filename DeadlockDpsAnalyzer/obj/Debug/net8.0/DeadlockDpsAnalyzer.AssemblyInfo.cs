@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeadlockDpsAnalyzer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+354cdb8148b972315918cc46a87aeb87249e15d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c763b4a607b9ae098f41c45bbe0712f0b6cc36c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeadlockDpsAnalyzer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeadlockDpsAnalyzer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

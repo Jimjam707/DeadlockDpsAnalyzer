@@ -1,22 +1,43 @@
-using System.Collections.Generic;
 using DeadlockDpsAnalyzer.Models;
+using MySql.Data.MySqlClient;
 
 namespace DeadlockDpsAnalyzer.Repositories;
 
 public class HeroRepository
 {
-    public static List<Hero> GetHeroes()
-    {
-    var vindictaWeapon = new Weapon("Vindicta", 50, 1.2);
-    var greyTalonWeapon = new Weapon("Grey Talon", 45, 1.5);
-    var wardenWeapon = new Weapon("Warden", 60, 1.0);
+    private readonly string _connectionString;
 
-    var heroes = new List<Hero>
+    public HeroRepository(string connectionString)
+    {
+        _connectionString = connectionString;
+    }
+
+    public List<Hero> GetHeroes()
+    {
+        var heroes = new List<Hero>();
+
+        using var connection = new MySqlConnection(_connectionString);
+        connection.Open();
+
+        string query = "SELECT Name, BaseDamage, BaseFireRate, DamagePerLevel FROM heroes;";
+        using var cmd = new MySqlCommand(query, connection);
+        using var reader = cmd.ExecuteReader();
+
+        while (reader.Read())
         {
-            new Hero("Vindicta", vindictaWeapon, damagePerLevel: 5, fireRatePerLevel: 0.05),
-            new Hero("Grey Talon", greyTalonWeapon, damagePerLevel: 4, fireRatePerLevel: 0.07),
-            new Hero("Warden", wardenWeapon, damagePerLevel: 6, fireRatePerLevel: 0.03)
-        };
+            var weapon = new Weapon(
+                reader.GetString("Name"),         // weapon name same as hero
+                reader.GetDouble("BaseDamage"),   // weapon base damage
+                reader.GetDouble("BaseFireRate")  // weapon base fire rate
+            );
+
+            heroes.Add(new Hero(
+                reader.GetString("Name"),
+                weapon,
+                damagePerLevel: reader.GetDouble("DamagePerLevel"),
+                fireRatePerLevel: 0 // optional: can remove if unused
+            ));
+        }
 
         return heroes;
     }
